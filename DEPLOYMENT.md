@@ -20,4 +20,4 @@ Updating the site
     gsutil \
       -m \
       -h "Cache-Control:private, max-age=0, no-transform" \
-      rsync -R -x '\.git/' -d . gs://etatunnit.taiteilijat.fi
+      rsync -R -x '\.git/' -x 'src/' -d . gs://etatunnit.taiteilijat.fi
