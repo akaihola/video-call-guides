@@ -51,6 +51,21 @@ h2 {
     font-style: normal;
 }
 
+.dropdown-active-selection {
+    border-radius: 0;
+    font-size: 20px;
+    background-color: #0e71eb;
+    color: #fff;
+    padding: 5px 16px;
+    white-space: nowrap;
+    vertical-align: middle;
+    border: 1px solid #0e71eb;
+    font-family: 'Lato', 'Helvetica', 'Arial', sans-serif;
+    font-weight: normal;
+    text-align: center;
+    font-style: normal;
+}
+
 .win-btn {
     background: #c2c2c2;
     border: 2px solid #747474;
