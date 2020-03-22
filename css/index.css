@@ -67,6 +67,32 @@ h1 {
 h2 {
 }
 
+.screenshot {
+    position: relative;
+    max-width: 100%
+}
+
+.screenshot img {
+}
+
+.screenshot svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.screenshot svg text {
+    font-family: sans-serif;
+}
+
+#step-02 .screenshot svg text {
+    font-size: 20px;
+}
+
+#step-05 .screenshot svg text {
+    font-size: 14px;
+}
+
 .zoom-navbar-item {
     color: #0c63ce;
     font-size: 12px;
