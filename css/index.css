@@ -1,3 +1,59 @@
+body {
+    margin-top: 0;
+}
+
+header {
+    height: calc(2rem + 2vw);
+}
+
+nav {
+    width: 100vw;
+    position: absolute;
+    left: 0;
+    background: #fff;
+    border-bottom: 1px solid #e7e7e7;
+    font-family: 'Lato', 'Helvetica', 'Arial', sans-serif;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav li {
+    list-style-type: none;
+    margin: 0;
+    font-size: 1.5vh;
+    font-weight: 300;
+    font-style: normal;
+    text-transform: uppercase;
+    padding: 1vw 2vw;
+    color: #777;
+}
+
+nav li:not(:first-child) {
+    margin-top: 0;
+}
+
+nav li:hover {
+    background: blue;
+}
+
+nav li.current:hover {
+    background: none;
+}
+
+nav li:hover a:link, nav li:hover a:visited {
+    color: #fff;
+}
+
+nav li a:link, nav li a:visited {
+    background: none;
+    color: #0c63ce;
+    text-shadow: none;
+}
+
 img {
     box-shadow: 10px 10px 5px -3px #777;
     display: block;
