@@ -10,6 +10,7 @@ nav {
     width: 100vw;
     height: calc(2vw + 1rem + 15px);
     position: absolute;
+    padding-left: 12.5%;
     left: 0;
     background: #fff;
     border-bottom: 1px inset #e7e7e7;
