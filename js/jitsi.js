@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
             return roomNameInput.value.trim();
         },
         getRoomUrl = () => {
-            return `https://meet.jit.si/${getRoomName()}?disableAP=true`;
+            return `https://meet.jit.si/${getRoomName()}#config.disableAP=true`;
         },
         loadingMessageStyle = $('#loading-message').style,
         roomUrlParagraph = $('#room-url'),
