@@ -2,6 +2,10 @@ body {
     margin-top: 0;
 }
 
+a {
+    white-space: nowrap;
+}
+
 header {
     height: calc(2rem + 2vw);
 }
@@ -202,4 +206,54 @@ h1 {
     background: #0e72eb;
     padding: 2px 5px;
     border-radius: 5px;
+}
+
+
+/* Jitsi */
+
+#chrome-message {
+    display: none;
+}
+
+#jitsi-form input#join {
+    background: url(img/camera.png);
+}
+
+#loading-message,
+#room-url {
+    visibility: hidden;
+}
+
+#room-url textarea {
+    height: 2.5ex;
+    resize: none;
+    background: none;
+    border: none;
+}
+
+#spinner {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+
+#spinner:after {
+  content: " ";
+  display: block;
+  width: 16px;
+  height: 16px;
+  margin: 2px;
+  border-radius: 50%;
+  border: 2px solid #000;
+  border-color: #000 transparent #000 transparent;
+  animation: spinner 1.2s linear infinite;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }

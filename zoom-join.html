@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimal-ui">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tufte-css/1.7.2/tufte.min.css">
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/github-corner.css" />
+    <script type="text/javascript" src="js/index.js"></script>
+    <title>Etäsoittotunnit Zoomilla</title>
+</head>
+<body>
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Johdanto</a></li>
+            <li><a href="jitsi.html">Jitsi-videopuhelun ohje</a></li>
+            <li><a>Zoom – Oppilaan ohje</a></li>
+            <li><a href="host-meeting.html">Zoom – Opettajan ohje</a></li>
+        </ul>
+    </nav>
+</header>
+<article>
+    <h1>Zoom-etäpuhelun ohje esim. soitonopetukseen</h1>
+    <section id="introduction">
+        <p>
+            Videopuhelusovellukset pyrkivät poistamaan taustamelua.
+            Koska ne on suunniteltu puheen välittämiseen,
+            ne tulkitsevat myös musiikin taustameluksi ja yrittävät "poistaa" sitä.
+            Siksi esim.
+            <a href="https://www.whatsapp.com/">WhatsApp</a>,
+            <a href="https://apps.apple.com/us/app/facetime/id1110145091">FaceTime</a>,
+            <a href="https://meet.google.com/">Google Meet</a>,
+            <a href="https://signal.org/">Signal</a> ja
+            <a href="https://duo.google.com/about/">Google Duo</a>
+            eivät ole kovin hyviä etäsoitonopetukseen.
+        </p>
+        <p>
+            Faceboookin
+            <a href="https://www.facebook.com/groups/199546481334521/search/?query=original%20sound&epa=SEARCH_BOX">Musiikin etäopetus</a>
+            -ryhmän keskusteluissa on suositeltu Zoom-videopuhelusovellusta.
+            Kokeilin sitä soitonopettajien kanssa,
+            ja sen äänenlaatu on tosiaan muita parempi, kunhan
+            <a href="https://support.zoom.us/hc/en-us/articles/115003279466-Preserve-Original-Sound">"Original sound" -asetus</a>
+            käännetään päälle.
+        </p>
+        <p>
+            Asetuksen käyttäminen on kuitenkin konstikasta,
+            eikä se toimi mobiililaitteissa.
+            Siksi tein tämän ohjeen,
+            joka näyttää kuinka saadaan parannettu äänenlaatu tietokoneella.
+            Ohje on tarkoitettu videopuheluun liittyvälle oppilaalle.
+            <a href="host-meeting.html">Opettajan ohje on työn alla</a>
+            (ja apu on tervetullutta, ks. alla).
+        </p>
+        <p id="contribute">
+            HUOM: Otan mielelläni vastaan parannuksia näihin ohjeisiin.
+            Jos osaat suoraan muokata sivuja,
+            tee <i>pull request</i>
+            <a href="https://github.com/akaihola/video-call-guides">GitHubissa</a>.
+            Voit myös
+            <a href="https://gitreports.com/issue/akaihola/video-call-guides">lähettää parannusehdotuksesi lomakkeella</a>,
+            jos sinulla ei ole GitHub-tunnusta.
+        </p>
+    </section>
+    <h1>Oppilaan ohje</h1>
+    <section id="step-01">
+        <h2>
+            1. Avaa Edge-selaimella osoite
+            <a href="https://zoom.us/">https://zoom.us/</a>
+            ja napsauta
+            <span class="zoom-navbar-item">JOIN A MEETING</span>
+        </h2>
+        <img src="img/student.01.png"
+             alt="1. Avaa Edge-selaimella osoite https://zoom.us/ ja napsauta JOIN A MEETING" />
+    </section>
+    <section id="step-02">
+        <h2>
+            2. Syötä opettajan antama puhelun numerokoodi ja napsauta
+            <span class="btn join wide">Join</span>
+        </h2>
+        <div class="screenshot">
+            <img src="img/student.02.png"
+                 alt="2. Syötä opettajan antama puhelun numerokoodi ja napsauta Join" />
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 787.5" >
+                <text x="43%" y="51%" class="meeting-id">123 456 7890</text>
+            </svg>
+        </div>
+    </section>
+    <section id="step-03">
+        <h2>
+            3. Napsauta <span class="win-btn execute">Suorita</span>,
+            ja salli muutokset tietokoneeseen kun Windows kysyy siihen lupaa.
+        </h2>
+        <img src="img/student.03.png"
+             alt="3. Napsauta Suorita" />
+    </section>
+    <section id="step-04">
+        <h2>4. Zoom-sovellus latautuu</h2>
+        <img src="img/student.04.png"
+             alt="4. Zoom-sovellus latautuu" />
+    </section>
+    <section id="step-05">
+        <h2>
+            5. Syötä puhelussa näytettävä nimesi ja napsauta
+            <span class="btn join narrow">Join</span>
+        </h2>
+        <div class="screenshot">
+            <img src="img/student.05.png"
+                 alt="5. Syötä puhelussa näytettävä nimesi ja napsauta Join" />
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 787.5" >
+                <text x="40%" y="44%" class="meeting-id">123 456 7890</text>
+            </svg>
+        </div>
+    </section>
+    <section id="step-06">
+        <h2>6. Napsauta <span class="btn join narrow">Join with Video</span></h2>
+        <img src="img/student.06.png"
+             alt="6. Napsauta Join with Video" />
+    </section>
+    <section id="step-07">
+        <h2>
+            7. Napsauta
+            <span class="btn join narrow">Join with Computer Audio</span>
+        </h2>
+        <img src="img/student.07.png"
+             alt="7. Napsauta Join with Computer Audio" />
+    </section>
+    <section id="step-08">
+        <h2>
+            8. Napsauta nuolta <span class="menu-arrow">^</span>
+            mikrofonikuvakkeen vieressä ja sitten
+            <span class="menu-item">Audio Settings...</span>
+        </h2>
+        <img src="img/student.08.png"
+             alt="8. Napsauta nuolta mikrofonikuvakkeen vieressä ja sitten Audio Settings..." />
+    </section>
+    <section id="step-09">
+        <h2>
+            9. Napsauta <span class="btn wide-right">🎧 Audio</span> ja sitten
+            <span class="advanced-btn">Advanced</span>
+        </h2>
+        <p>
+            Tässä kohdassa kumpikin osapuoli voi myös kokeilla poistaa käytöstä
+            mikrofonin voimakkuuden automaattisen säädön.
+            Muistakaa kysyä toiselta osapuolelta äänenne voimakkuutta.
+            Jos se on hiljainen ja on paljon suhinaa,
+            säädä voimakkuutta suuremmalle,
+            ja jos ääni menee särölle kun soitat kuvaa,
+            säädä voimakkuutta pienemmälle.
+        </p>
+        <img src="img/student.09.png"
+             alt="9. Napsauta Audio ja sitten Advanced" />
+    </section>
+    <section id="step-10">
+        <h2>
+            10. Rastita
+            <span class="option">
+                <span class="tickmark">✓</span>
+                Show in-meeting option to "Enable Original Sound" from microphone
+            </span>
+        </h2>
+        <img src="img/student.10.png"
+             alt="10. Rastita Show in-meeting option to Enable Original Sound from microphone" />
+    </section>
+    <section id="step-11">
+        <h2>
+            11. Vaihda kohdissa
+            <span class="option">Suppress persistent background noise</span> ja
+            <span class="option">Suppress intermittent background noise</span>
+            valinta vaihtoehdosta
+            <span class="advanced-btn">Auto&nbsp;&nbsp;&nbsp;⌄</span>
+            vaihtoehtoon <span class="dropdown-active-selection">Disable</span>.
+        </h2>
+        <img src="img/app-disable-noise-reduction.jpg"
+             alt="11. Vaihda kohdassa Suppress persistent/intermittent background noise valinta vaihtoehdosta Auto vaihtoehtoon Disable" />
+    </section>
+    <section id="step-12">
+        <h2>
+            12. Poista käyttöjärjestelmän oma taustamelun poisto käytöstä.
+        </h2>
+        <ul>
+            <li>
+                (aiemmin tässä linkitetty Windows 10 -ohje ei toiminut)
+            </li>
+            <li>
+                <a href="https://support.soundtrap.com/hc/en-us/articles/212356589-How-can-I-reduce-monitoring-latency-on-Mac-OS-X-">
+                    How can I reduce monitoring latency on Mac OS X?
+                </a>
+            </li>
+        </ul>
+    </section>
+</article>
+<footer>
+    Antti Kaihola 2020
+</footer>
+<a href="https://github.com/akaihola/video-call-guides"
+   class="github-corner"
+   aria-label="View source on GitHub">
+    <svg width="80" height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z">
+        </path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor"
+              style="transform-origin: 130px 106px;"
+              class="octo-arm">
+        </path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor"
+              class="octo-body">
+        </path>
+    </svg>
+</a>
+</body>
+</html>

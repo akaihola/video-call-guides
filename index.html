@@ -13,13 +13,15 @@
 <header>
     <nav>
         <ul>
-            <li><a>Oppilaan ohje</a></li>
-            <li><a href="host-meeting.html">Opettajan ohje</a></li>
+            <li><a>Johdanto</a></li>
+            <li><a href="jitsi.html">Jitsi-videopuhelun ohje</a></li>
+            <li><a href="zoom-join.html">Zoom – Oppilaan ohje</a></li>
+            <li><a href="host-meeting.html">Zoom – Opettajan ohje</a></li>
         </ul>
     </nav>
 </header>
 <article>
-    <h1>Zoom-etäpuhelun ohje esim. soitonopetukseen</h1>
+    <h1>Etäpuhelut soitonopetuksessa</h1>
     <section id="introduction">
         <p>
             Videopuhelusovellukset pyrkivät poistamaan taustamelua.
@@ -34,23 +36,47 @@
             eivät ole kovin hyviä etäsoitonopetukseen.
         </p>
         <p>
-            Faceboookin
-            <a href="https://www.facebook.com/groups/199546481334521/search/?query=original%20sound&epa=SEARCH_BOX">Musiikin etäopetus</a>
-            -ryhmän keskusteluissa on suositeltu Zoom-videopuhelusovellusta.
-            Kokeilin sitä soitonopettajien kanssa,
-            ja sen äänenlaatu on tosiaan muita parempi, kunhan
-            <a href="https://support.zoom.us/hc/en-us/articles/115003279466-Preserve-Original-Sound">"Original sound" -asetus</a>
-            käännetään päälle.
+            Kaksi videopuhelusovellusta erottuvat joukosta siinä,
+            että niissä voi ottaa ylimääräiset äänenmuokkaukset pois käytöstä:
+            <strong><a href="https://jitsi.org/">Jitsi</a></strong> ja
+            <strong><a href="https://zoom.us/">Zoom</a></strong>.
         </p>
         <p>
-            Asetuksen käyttäminen on kuitenkin konstikasta,
-            eikä se toimi mobiililaitteissa.
-            Siksi tein tämän ohjeen,
-            joka näyttää kuinka saadaan parannettu äänenlaatu tietokoneella.
-            Ohje on tarkoitettu videopuheluun liittyvälle oppilaalle.
+            Kumpikaan näistä sovelluksista ei kuitenkaan
+            sellaisenaan tarjoa hyvää äänenlaatua musiikille.
+            Kummassakin täytyy erikseen
+            ottaa ylimääräiset äänenmuokkaukset pois käytöstä.
+        </p>
+    </section>
+    <h2>Yksinkertaisin ratkaisu – Jitsi</h2>
+    <section>
+        <p>
+            Äänen laadun parantaminen on yksinkertaisempaa Jitsissä –
+            puhelun nettiosoitteen perään lisätään vain
+            <code>?disableAP=true</code>.
+            Jos liityt puheluun oheisen <a href="jitsi.html">Jitsi-ohjeen</a> avulla,
+            tuo asetus on automaattisesti päällä.
+        </p>
+    </section>
+    <h2>Toinen vaihtoehto – Zoom</h2>
+    <section>
+        <p>
+            Faceboookin
+            <a href="https://www.facebook.com/groups/199546481334521/search/?query=original%20sound&epa=SEARCH_BOX">Musiikin etäopetus</a>
+            -ryhmän keskusteluissa suositellussa
+            <a href="https://zoom.us/">Zoom</a>-videopuhelusovelluksessa
+            pitää kääntää
+            <a href="https://support.zoom.us/hc/en-us/articles/115003279466-Preserve-Original-Sound">"Original sound" -asetus</a>
+            päälle.
+            Se ei ole aivan yksinkertaista,
+            ja ohjeen löydät <a href="zoom-join.html">Zoom-ohjesivulta.</a>
+            Parempi äänenlaatu ei myöskään toimi mobiililaitteissa.
             <a href="host-meeting.html">Opettajan ohje on työn alla</a>
             (ja apu on tervetullutta, ks. alla).
         </p>
+    </section>
+    <h2>Voit auttaa</h2>
+    <section>
         <p id="contribute">
             HUOM: Otan mielelläni vastaan parannuksia näihin ohjeisiin.
             Jos osaat suoraan muokata sivuja,
@@ -60,133 +86,6 @@
             <a href="https://gitreports.com/issue/akaihola/video-call-guides">lähettää parannusehdotuksesi lomakkeella</a>,
             jos sinulla ei ole GitHub-tunnusta.
         </p>
-    </section>
-    <h1>Oppilaan ohje</h1>
-    <section id="step-01">
-        <h2>
-            1. Avaa Edge-selaimella osoite
-            <a href="https://zoom.us/">https://zoom.us/</a>
-            ja napsauta
-            <span class="zoom-navbar-item">JOIN A MEETING</span>
-        </h2>
-        <img src="img/student.01.png"
-             alt="1. Avaa Edge-selaimella osoite https://zoom.us/ ja napsauta JOIN A MEETING" />
-    </section>
-    <section id="step-02">
-        <h2>
-            2. Syötä opettajan antama puhelun numerokoodi ja napsauta
-            <span class="btn join wide">Join</span>
-        </h2>
-        <div class="screenshot">
-            <img src="img/student.02.png"
-                 alt="2. Syötä opettajan antama puhelun numerokoodi ja napsauta Join" />
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 787.5" >
-                <text x="43%" y="51%" class="meeting-id">123 456 7890</text>
-            </svg>
-        </div>
-    </section>
-    <section id="step-03">
-        <h2>
-            3. Napsauta <span class="win-btn execute">Suorita</span>,
-            ja salli muutokset tietokoneeseen kun Windows kysyy siihen lupaa.
-        </h2>
-        <img src="img/student.03.png"
-             alt="3. Napsauta Suorita" />
-    </section>
-    <section id="step-04">
-        <h2>4. Zoom-sovellus latautuu</h2>
-        <img src="img/student.04.png"
-             alt="4. Zoom-sovellus latautuu" />
-    </section>
-    <section id="step-05">
-        <h2>
-            5. Syötä puhelussa näytettävä nimesi ja napsauta
-            <span class="btn join narrow">Join</span>
-        </h2>
-        <div class="screenshot">
-            <img src="img/student.05.png"
-                 alt="5. Syötä puhelussa näytettävä nimesi ja napsauta Join" />
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 787.5" >
-                <text x="40%" y="44%" class="meeting-id">123 456 7890</text>
-            </svg>
-        </div>
-    </section>
-    <section id="step-06">
-        <h2>6. Napsauta <span class="btn join narrow">Join with Video</span></h2>
-        <img src="img/student.06.png"
-             alt="6. Napsauta Join with Video" />
-    </section>
-    <section id="step-07">
-        <h2>
-            7. Napsauta
-            <span class="btn join narrow">Join with Computer Audio</span>
-        </h2>
-        <img src="img/student.07.png"
-             alt="7. Napsauta Join with Computer Audio" />
-    </section>
-    <section id="step-08">
-        <h2>
-            8. Napsauta nuolta <span class="menu-arrow">^</span>
-            mikrofonikuvakkeen vieressä ja sitten
-            <span class="menu-item">Audio Settings...</span>
-        </h2>
-        <img src="img/student.08.png"
-             alt="8. Napsauta nuolta mikrofonikuvakkeen vieressä ja sitten Audio Settings..." />
-    </section>
-    <section id="step-09">
-        <h2>
-            9. Napsauta <span class="btn wide-right">🎧 Audio</span> ja sitten
-            <span class="advanced-btn">Advanced</span>
-        </h2>
-        <p>
-            Tässä kohdassa kumpikin osapuoli voi myös kokeilla poistaa käytöstä
-            mikrofonin voimakkuuden automaattisen säädön.
-            Muistakaa kysyä toiselta osapuolelta äänenne voimakkuutta.
-            Jos se on hiljainen ja on paljon suhinaa,
-            säädä voimakkuutta suuremmalle,
-            ja jos ääni menee särölle kun soitat kuvaa,
-            säädä voimakkuutta pienemmälle.
-        </p>
-        <img src="img/student.09.png"
-             alt="9. Napsauta Audio ja sitten Advanced" />
-    </section>
-    <section id="step-10">
-        <h2>
-            10. Rastita
-            <span class="option">
-                <span class="tickmark">✓</span>
-                Show in-meeting option to "Enable Original Sound" from microphone
-            </span>
-        </h2>
-        <img src="img/student.10.png"
-             alt="10. Rastita Show in-meeting option to Enable Original Sound from microphone" />
-    </section>
-    <section id="step-11">
-        <h2>
-            11. Vaihda kohdissa
-            <span class="option">Suppress persistent background noise</span> ja
-            <span class="option">Suppress intermittent background noise</span>
-            valinta vaihtoehdosta
-            <span class="advanced-btn">Auto&nbsp;&nbsp;&nbsp;⌄</span>
-            vaihtoehtoon <span class="dropdown-active-selection">Disable</span>.
-        </h2>
-        <img src="img/app-disable-noise-reduction.jpg"
-             alt="11. Vaihda kohdassa Suppress persistent/intermittent background noise valinta vaihtoehdosta Auto vaihtoehtoon Disable" />
-    </section>
-    <section id="step-12">
-        <h2>
-            12. Poista käyttöjärjestelmän oma taustamelun poisto käytöstä.
-        </h2>
-        <ul>
-            <li>
-                (aiemmin tässä linkitetty Windows 10 -ohje ei toiminut)
-            </li>
-            <li>
-                <a href="https://support.soundtrap.com/hc/en-us/articles/212356589-How-can-I-reduce-monitoring-latency-on-Mac-OS-X-">
-                    How can I reduce monitoring latency on Mac OS X?
-                </a>
-            </li>
-        </ul>
     </section>
 </article>
 <footer>
