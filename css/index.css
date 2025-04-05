@@ -1,0 +1,270 @@
+body {
+    margin-top: 0;
+}
+
+a {
+    white-space: nowrap;
+}
+
+header {
+    height: calc(2rem + 2vw);
+}
+
+nav {
+    width: 100vw;
+    height: calc(2vw + 1rem + 15px);
+    position: absolute;
+    padding-left: 12.5%;
+    left: 0;
+    background: #fff;
+    border-bottom: 1px inset #e7e7e7;
+    font-family: 'Lato', 'Helvetica', 'Arial', sans-serif;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav li {
+    list-style-type: none;
+    margin: 0;
+    font-size: 1.5vh;
+    font-weight: 300;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+nav li:not(:first-child) {
+    margin-top: 0;
+}
+
+nav li a {
+    display: block;
+    padding: 1vw 2vw;
+    background: #fffff8;
+    color: #777;
+    border-left: 1px solid #e7e7e7;
+    border-right: 1px solid #e7e7e7;
+    border-bottom: 1px solid #fffff8;
+}
+
+nav li a:link, nav li a:visited {
+    color: #0c63ce;
+    background: none;
+    text-shadow: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+nav li a:link:hover, nav li a:visited:hover {
+    background: blue;
+    color: #fff;
+}
+
+p.action {
+    font-size: 1.7rem;
+}
+
+p.action:before {
+    content: "➡";
+    color: #fffff8;
+    background: #D7EF8D;
+    padding: 0px 5px;
+}
+
+img {
+    box-shadow: 10px 10px 5px -3px #777;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    margin-top: 0
+}
+
+.screenshot {
+    position: relative;
+    max-width: 100%
+}
+
+.screenshot svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.screenshot svg text {
+    font-family: sans-serif;
+}
+
+#step-02 .screenshot svg text {
+    font-size: 20px;
+}
+
+#step-05 .screenshot svg text {
+    font-size: 14px;
+}
+
+.zoom-navbar-item {
+    color: #0c63ce;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: 'Lato', 'Helvetica', 'Arial', sans-serif;
+    font-style: normal;
+}
+
+.btn.join {
+    height: 56px;
+    line-height: 44px;
+}
+
+.btn.wide {
+    padding-left: 90px;
+    padding-right: 90px;
+}
+
+.btn.wide-right {
+    padding: 10px 90px 5px 10px;
+}
+
+.btn.join.narrow {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.btn {
+    border-radius: 8px;
+    font-size: 20px;
+    background-color: #0e71eb;
+    color: #fff;
+    padding: 5px 16px;
+    white-space: nowrap;
+    vertical-align: middle;
+    border: 1px solid #0e71eb;
+    font-family: 'Lato', 'Helvetica', 'Arial', sans-serif;
+    font-weight: normal;
+    text-align: center;
+    font-style: normal;
+}
+
+.dropdown-active-selection {
+    border-radius: 0;
+    font-size: 20px;
+    background-color: #0e71eb;
+    color: #fff;
+    padding: 5px 16px;
+    white-space: nowrap;
+    vertical-align: middle;
+    border: 1px solid #0e71eb;
+    font-family: 'Lato', 'Helvetica', 'Arial', sans-serif;
+    font-weight: normal;
+    text-align: center;
+    font-style: normal;
+}
+
+.win-btn {
+    background: #c2c2c2;
+    border: 2px solid #747474;
+    font-family: sans-serif;
+    font-weight: normal;
+    padding: 2px 45px;
+    font-size: 15px;
+    font-style: normal;
+}
+
+.menu-arrow {
+    background: #1f2123;
+    color: #fff;
+    padding: 6px 12px 0 10px;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.menu-item {
+    background: #434546;
+    color: #bebebe;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 4px 100px 4px 20px;
+}
+
+.advanced-btn {
+    background: #efeff4;
+    color: #222230;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 1rem;
+    border: 1px solid #909096;
+    border-radius: 10px;
+    padding: 4px 15px;
+}
+
+.option {
+    font-family: sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1.3rem;
+}
+
+.tickmark {
+    color: #fff;
+    background: #0e72eb;
+    padding: 2px 5px;
+    border-radius: 5px;
+}
+
+
+/* Jitsi */
+
+#chrome-message {
+    display: none;
+}
+
+#jitsi-form input#join {
+    background: url(img/camera.png);
+}
+
+#loading-message,
+#room-url {
+    visibility: hidden;
+}
+
+#room-url textarea {
+    height: 2.5ex;
+    resize: none;
+    background: none;
+    border: none;
+}
+
+#spinner {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+
+#spinner:after {
+  content: " ";
+  display: block;
+  width: 16px;
+  height: 16px;
+  margin: 2px;
+  border-radius: 50%;
+  border: 2px solid #000;
+  border-color: #000 transparent #000 transparent;
+  animation: spinner 1.2s linear infinite;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
